@@ -11,8 +11,8 @@
 ## Terminal
 Version `pip -V` or `which pip` `python3 -V`
 REPL 
-    Start `python3` (just like the chrome dev tools terminal)
-    End `quit()`
+- Start `python3` (just like the chrome dev tools terminal)
+- End `quit()`
 RUN a program
 - play button
 - `python3 test.py`
