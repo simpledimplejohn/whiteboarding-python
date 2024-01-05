@@ -33,22 +33,26 @@ def findMatrix(arr):
     # first check if the array value is in the dictionary?
     # if it is in there, then pull the count value and add one
     for element in arr:
-
         if element in dictionary:
             tempcount = dictionary[element]
             print("tempcount")
             print(tempcount, element)
             tempcount = tempcount + 1
             dictionary[element] = tempcount
-
         else:
             dictionary[element] = 1
 
+    # next task, make an array of arrays with the hightest count value
+    highest_count = 0
+    answer_arr = []
+    for i in range(0 , 3):
+        temp_arr = []
+        answer_arr.insert(i,temp_arr)
         
          
 
         
 
-    return dictionary
+    return answer_arr
 
 print(findMatrix(arr))

@@ -1,4 +1,4 @@
-## for loop
+## for in loop
 list = [1,2,5,8,2,6,4,0]
 movelist = []
 
