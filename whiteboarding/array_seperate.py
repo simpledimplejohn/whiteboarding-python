@@ -35,19 +35,35 @@ def findMatrix(arr):
     for element in arr:
         if element in dictionary:
             tempcount = dictionary[element]
-            print("tempcount")
-            print(tempcount, element)
+            
+            
             tempcount = tempcount + 1
             dictionary[element] = tempcount
         else:
             dictionary[element] = 1
-
-    # next task, make an array of arrays with the hightest count value
+    # get the highest count from the dictionary
+    print(dictionary)
     highest_count = 0
+    for values in dictionary:
+        if values > highest_count:
+            highest_count = values
+    print("highest_count",highest_count)
+    # next task, make an array of arrays with the hightest count value
+    
     answer_arr = []
-    for i in range(0 , 3):
+    for i in range(0, highest_count):
+        
         temp_arr = []
         answer_arr.insert(i,temp_arr)
+    # now add the values to the array
+    # count >=1 all go in the first arr
+    print("answer")
+    for i in range(0,highest_count):
+        # loop through the dictionary
+        
+        
+
+        print(answer_arr[i])
         
          
 

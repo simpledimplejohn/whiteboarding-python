@@ -23,11 +23,23 @@ my_dictionary = {
 my_dictionary['name'] = 'fred'
 temp = my_dictionary['name']
 
-print('itmes:')
-print(my_dictionary.items())
-print('keys')
-print(my_dictionary.keys())
-print('values')
-print(my_dictionary.values())
-print("get")
-print(my_dictionary.get('name'))
+# print('itmes:')
+# print(my_dictionary.items())
+# print('keys')
+# print(my_dictionary.keys())
+# print('values')
+# print(my_dictionary.values())
+# print("get")
+# print(my_dictionary.get('name'))
+
+
+# loop through the dictionary, keys, values, pairs
+print("key loop")
+for key in my_dictionary.keys():
+    print("  ",key)
+print("value loop")
+for value in my_dictionary.values():
+    print("  ",value)
+print("pairs loop")
+for key,value in my_dictionary.items():
+    print("  ", key,value)
