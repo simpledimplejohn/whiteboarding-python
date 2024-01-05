@@ -57,18 +57,16 @@ def findMatrix(arr):
         answer_arr.insert(i,temp_arr)
     # now add the values to the array
     # count >=1 all go in the first arr
-    print("answer")
+    
     for i in range(0,highest_count):
-        # loop through the dictionary
+        # loop through the dictionary 
         
+        for key,value in dictionary.items():
+            temp_arr = []
+            
+            if(value >= i):
+                answer_arr[i].append(key)
         
-
-        print(answer_arr[i])
-        
-         
-
-        
-
     return answer_arr
 
 print(findMatrix(arr))
