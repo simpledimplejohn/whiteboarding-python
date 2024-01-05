@@ -22,7 +22,7 @@
 # All elements of nums were used, and each row of the 2D array contains distinct integers, so it is a valid answer.
 # It can be shown that we cannot have less than 3 rows in a valid array.
 
-arr = [1, 3, 4, 1, 2, 3, 1]
+arr = [1, 3, 4, 1, 2, 3, 1,4,4,4]
 arr2 = [1,1,1,1,1,1,1,1]
 arr3 = [1,2,3,4,5,6]
 
@@ -32,12 +32,18 @@ def findMatrix(arr):
     count = 0
     # first check if the array value is in the dictionary?
     # if it is in there, then pull the count value and add one
-    
-
     for element in arr:
-        if(dictionary.get(element) == element):
-            tempcount = dictionary.keys(element)
-            print("tempcount",tempcount, element)
+
+        if element in dictionary:
+            tempcount = dictionary[element]
+            print("tempcount")
+            print(tempcount, element)
+            tempcount = tempcount + 1
+            dictionary[element] = tempcount
+
+        else:
+            dictionary[element] = 1
+
         
          
 

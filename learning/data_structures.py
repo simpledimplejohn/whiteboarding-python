@@ -29,5 +29,5 @@ print('keys')
 print(my_dictionary.keys())
 print('values')
 print(my_dictionary.values())
-
-
+print("get")
+print(my_dictionary.get('name'))
